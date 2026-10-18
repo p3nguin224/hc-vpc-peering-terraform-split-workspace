@@ -1,0 +1,16 @@
+# Directories
+.terraform/
+
+# Files
+*.tfstate
+*.tfstate.*
+*.tfvars
+
+# Logs
+*.log
+
+# Keys
+*.pem
+*.key
+*.env
+*.crt
