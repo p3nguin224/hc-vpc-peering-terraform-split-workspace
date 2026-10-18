@@ -3,7 +3,7 @@ terraform {
   cloud {
     organization = "vpc-peering-test"
     workspaces {
-      name = "fe-security-ws"
+      name = "fe-compute-ws"
     }
   }
 

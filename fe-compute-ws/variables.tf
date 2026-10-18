@@ -14,9 +14,13 @@ variable "based-tags" {
 }
 
 
-variable "management-ip" {
-  description = "IP address which will allow for SSH and Ping"
+variable "key-pair-name" {
+  description = "Key-pair to login into EC2"
   type        = string
 }
 
-
+variable "instance-type" {
+  description = "Instance type of EC2"
+  type        = string
+  default     = "t3.micro"
+}
