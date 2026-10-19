@@ -5,10 +5,11 @@ variable "region" {
 
 }
 
-variable "profile" {
-  description = "AWS Profile"
+variable "peer-region" {
+  description = "AWS Region"
   type        = string
 }
+
 
 variable "vpc-name" {
   description = "VPC Name"

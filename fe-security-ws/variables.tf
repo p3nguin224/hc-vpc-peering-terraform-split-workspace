@@ -4,6 +4,13 @@ variable "region" {
   default     = "ap-northeast-1"
 }
 
+variable "peer-region" {
+  description = "AWS Peer region"
+  type        = string
+  default     = "ap-southeast-1"
+}
+
+
 variable "based-tags" {
   description = "tags for all resources"
   type        = map(string)

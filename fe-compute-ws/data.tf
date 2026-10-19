@@ -50,3 +50,13 @@ data "terraform_remote_state" "fe-network-ws" {
     }
   }
 }
+
+data "terraform_remote_state" "be-compute-ws" {
+  backend = "remote"
+  config = {
+    organization = "vpc-peering-test"
+    workspaces = {
+      name = "be-compute-ws"
+    }
+  }
+}
